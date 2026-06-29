@@ -165,7 +165,7 @@ export default function SignUp() {
             </p>
           )}
         </div>
-        {errors.phoneNumber && <p className="text-red-500 text-sm">{error}</p>}
+        {errors.phoneNumber && <p className="text-red-500 text-sm">{errors.phoneNumber.message}</p>}
         {success && (
           <p className="text-green-500 text-sm">
             Account created successfully!
